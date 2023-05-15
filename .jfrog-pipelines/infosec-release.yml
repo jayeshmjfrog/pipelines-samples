@@ -25,4 +25,4 @@ pipelines:
         execution:
           onExecute:
             - echo "Publishing base Docker image"
-            - write_output infosec_docker_release_trigger RELEASED_DOCKER_IMAGE='NEW_DOCKER_IMAGE:${run_number}'
+            - write_output infosec_docker_release_trigger RELEASED_DOCKER_IMAGE=${run_number}
