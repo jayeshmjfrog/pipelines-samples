@@ -27,9 +27,9 @@ pipelines:
             - name: infosec_docker_release_trigger
         execution:
           onExecute:
-            - echo "Using stable base infosec image - {{ get .Values.stableBaseImages $target.baseImageName}}"
-            - echo "Installing {{ $team.language.name }} - {{ $team.language.version }}"
-            {{- range $tool := $team.tools }}
+            - echo "Using stable base infosec image - {{ $target.baseImageName }}"
+            - echo "Installing {{ $target.language.name }} - {{ $target.language.version }}"
+            {{- range $tool := $target.tools }}
             - echo "Installing tool - {{ $tool }}"
             {{- end }}
             - echo "Successfully build image."
