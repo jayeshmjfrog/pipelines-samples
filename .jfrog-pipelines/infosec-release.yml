@@ -7,7 +7,7 @@ resources:
 pipelines:
 
   # Infosec Pipeline
-  - name: infosec_docker_release
+  - name: app_team_infosec_docker_release
     steps:
       - name: docker_build
         type: Bash
