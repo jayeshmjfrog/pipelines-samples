@@ -5,7 +5,7 @@ stableBaseImages:
 teams:
   - name: app_team_1
     sourceCode:
-      repositoryPath: 'kunal-mazumdar/pipelines-local-test-repo'
+      repositoryPath: 'jayeshmjfrog/pipelines-samples' 
       branch: 'riotGames'
       gitIntegration: test_git
     destinationRepo: 'company.jfrog.io/app_team_1_docker_local'
@@ -30,7 +30,7 @@ teams:
 
   - name: app_team_2
     sourceCode:
-      repositoryPath: 'kunal-mazumdar/pipelines-local-test-repo'
+      repositoryPath: 'jayeshmjfrog/pipelines-samples'
       branch: 'riotGames'
       gitIntegration: test_git
     destinationRepo: 'company.jfrog.io/app_team_2_docker_local'
